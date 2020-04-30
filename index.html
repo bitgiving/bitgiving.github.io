@@ -1,27 +1,55 @@
-<html>
+<!doctype html>
+<html lang="en">
+
 <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>BitGiving</title>
+  <meta name="description" content="BitGiving">
+  <link rel="stylesheet" href="bitgiving.css">
+  <link rel="icon" type="image/png" href="favicon.png">
 </head>
+
 <body>
 
-<img src="logo.png">
+<header>
+<nav style="display: flex; align-items: center; flex-wrap: wrap;">
+</nav>
+</header>
 
-<h1>BitGiving</h1>
-<br>
+<main style="max-width: 1200px;">
+<h1 style="margin: 2rem 0;text-align: center;">BitGiving <img src="logo.png" width="100"></h1>
+<p style="margin: 1rem 1rem;">BitGiving's mission is to make it possible for anybody to donate. We believe a little can go a long way in helping organisations create global change.</p>
 
-<p>BitGiving's mission is to make it possible for anybody to donate. We believe a little can go a long way in helping organisations create global change.</p>
+<div style="display: flex;flex-wrap: wrap;">
 
-<a href="https://www.doctorswithoutborders.org/">Doctors Without Borders</a>
-<a href="https://www.savethechildren.org/">Save the Children</a>
-<a href="https://www.worldanimalprotection.org/">World Animal Protection</a>
-<a href="https://hopeforjustice.org/">Hope for Justice</a>
+  <div style="display: flex;flex-direction: column;margin: 1rem 1rem;">
+    <a href="https://www.doctorswithoutborders.org/">Doctors Without Borders</a>
+    <iframe width="500" height="400" src="https://www.youtube.com/embed/mXV8lTgETks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mXV8lTgETks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jvV8ANCfITc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eDvfrCOHCdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0_bAkVbjZro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <div style="display: flex;flex-direction: column;margin: 1rem 1rem;">
+    <a href="https://www.savethechildren.org/">Save the Children</a>
+    <iframe width="500" height="400" src="https://www.youtube.com/embed/jvV8ANCfITc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div style="display: flex;flex-direction: column;margin: 1rem 1rem;">
+    <a href="https://www.worldanimalprotection.org/">World Animal Protection</a>
+    <iframe width="500" height="400" src="https://www.youtube.com/embed/eDvfrCOHCdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+  <div style="display: flex;flex-direction: column;margin: 1rem 1rem;">
+    <a href="https://hopeforjustice.org/">Hope for Justice</a>
+    <iframe width="500" height="400" src="https://www.youtube.com/embed/0_bAkVbjZro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+</div>
 
 <div id="litPayWall"></div>
 
 <script src="https://ads4satoshis.com/paywall.js?adViews=3&cost=5" data-enc-server-info="eyJpdiI6Im0wWlNOLzhHU2dLbGRTaTU1Zlh2Zmc9PSIsInYiOjEsIml0ZXIiOjEwMDAwLCJrcyI6MTI4LCJ0cyI6NjQsIm1vZGUiOiJjY20iLCJhZGF0YSI6IiIsImNpcGhlciI6ImFlcyIsImtlbXRhZyI6InU2V3YwcGFaU01RNWo3RWF1N0NsWjY3bFk0c2I0a0NWaGNIZnNSTWhZdS92enZNd1BMN0FBTXVKbTV3Vjg1M1JIVHByMXptdEc5M1pPUzZadnF5Mk9RPT0iLCJjdCI6ImpLTmtLYlFCdlJFaDFPOVZ4Ui9ObG03OHRaRXhEVDlRM2hWOGFCUGwrZWtrMFN0K2V0eDV5cStLZFRlUU1lajVjNkJFc0s5MWdDSW55cUV4L1hHNGhkcXJSZG89In0=" data-enc-content="eyJpdiI6InhKaXNuK29QRFNGejBGMmRPNHk4QVE9PSIsInYiOjEsIml0ZXIiOjEwMDAwLCJrcyI6MTI4LCJ0cyI6NjQsIm1vZGUiOiJjY20iLCJhZGF0YSI6IiIsImNpcGhlciI6ImFlcyIsInNhbHQiOiJRcXM2QWxaNmdOYz0iLCJjdCI6IkdEWUZvT2lZSTlDclk1ZXdaelNvRkVSRllsTEY1VnNZR24rV2wzMk9xZkFnTFJHeTZPZnpkWlA4eDFoSlVzT2s0V0tPRW0yUVl1Tncxd2gySkRjOGpVMERyY21hdTc5ZVBMbHVCaHFyM0JqNmRtQmFQaHpsVVhLbngraEY0N2I5TG5SSkg2QVJRcXF6MWNUQnZMMmNDbENtQlFHekpJdmNsZFd4MEpnPSJ9"></script>
+</main>
+
 </body>
+
 </html>
