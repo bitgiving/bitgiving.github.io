@@ -14,6 +14,9 @@
 
 <header>
 <nav style="display: flex; align-items: center; flex-wrap: wrap;">
+  <a href="index.html" style="color:#000;font-size: 1.2rem;margin: 0 0.8rem;">BitGiving</a>
+  <a href="about-us.html" style="margin: 0.3rem 0.8rem;font-size: 1rem;">About Us</a>
+  <a href="contact-us.html" style="margin: 0.3rem 0.8rem;font-size: 1rem;">Contact Us</a>
 </nav>
 </header>
 
@@ -24,32 +27,53 @@
 <div style="display: flex;flex-wrap: wrap;">
 
   <div style="display: flex;flex-direction: column;margin: 1rem 1rem;">
-    <a href="https://www.doctorswithoutborders.org/">Doctors Without Borders</a>
+    <div style="display: flex;align-items: flex-end; justify-content: space-between;margin: 1rem 0;font-size: 1rem;">
+      <a href="https://www.doctorswithoutborders.org/">Doctors Without Borders</a>
+      <a class="button" id="donateButton" style="margin: 0 0 0 2rem;font-size: 1rem;" href="#donateModalOpen">Donate</a>
+    </div>
     <iframe width="500" height="400" src="https://www.youtube.com/embed/mXV8lTgETks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
   <div style="display: flex;flex-direction: column;margin: 1rem 1rem;">
-    <a href="https://www.savethechildren.org/">Save the Children</a>
+    <div style="display: flex;align-items: flex-end; justify-content: space-between;margin: 1rem 0;font-size: 1rem;">
+      <a href="https://www.savethechildren.org/">Save the Children</a>
+      <a class="button" id="donateButton" style="margin: 0 0 0 2rem;font-size: 1rem;" href="#donateModalOpen">Donate</a>
+    </div>
     <iframe width="500" height="400" src="https://www.youtube.com/embed/jvV8ANCfITc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
   <div style="display: flex;flex-direction: column;margin: 1rem 1rem;">
-    <a href="https://www.worldanimalprotection.org/">World Animal Protection</a>
+    <div style="display: flex;align-items: flex-end; justify-content: space-between;margin: 1rem 0;font-size: 1rem;">
+      <a href="https://www.worldanimalprotection.org/">World Animal Protection</a>
+      <a class="button" id="donateButton" style="margin: 0 0 0 2rem;font-size: 1rem;" href="#donateModalOpen">Donate</a>
+    </div>
     <iframe width="500" height="400" src="https://www.youtube.com/embed/eDvfrCOHCdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
   <div style="display: flex;flex-direction: column;margin: 1rem 1rem;">
-    <a href="https://hopeforjustice.org/">Hope for Justice</a>
+    <div style="display: flex;align-items: flex-end; justify-content: space-between;margin: 1rem 0;font-size: 1rem;">
+      <a href="https://hopeforjustice.org/">Hope for Justice</a>
+      <a class="button" id="donateButton" style="margin: 0 0 0 2rem;font-size: 1rem;" href="#donateModalOpen">Donate</a>
+    </div>
     <iframe width="500" height="400" src="https://www.youtube.com/embed/0_bAkVbjZro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   </div>
 
 </div>
-
-<div id="litPayWall"></div>
-
-<script src="https://ads4satoshis.com/paywall.js?adViews=3&cost=5" data-enc-server-info="eyJpdiI6Im0wWlNOLzhHU2dLbGRTaTU1Zlh2Zmc9PSIsInYiOjEsIml0ZXIiOjEwMDAwLCJrcyI6MTI4LCJ0cyI6NjQsIm1vZGUiOiJjY20iLCJhZGF0YSI6IiIsImNpcGhlciI6ImFlcyIsImtlbXRhZyI6InU2V3YwcGFaU01RNWo3RWF1N0NsWjY3bFk0c2I0a0NWaGNIZnNSTWhZdS92enZNd1BMN0FBTXVKbTV3Vjg1M1JIVHByMXptdEc5M1pPUzZadnF5Mk9RPT0iLCJjdCI6ImpLTmtLYlFCdlJFaDFPOVZ4Ui9ObG03OHRaRXhEVDlRM2hWOGFCUGwrZWtrMFN0K2V0eDV5cStLZFRlUU1lajVjNkJFc0s5MWdDSW55cUV4L1hHNGhkcXJSZG89In0=" data-enc-content="eyJpdiI6InhKaXNuK29QRFNGejBGMmRPNHk4QVE9PSIsInYiOjEsIml0ZXIiOjEwMDAwLCJrcyI6MTI4LCJ0cyI6NjQsIm1vZGUiOiJjY20iLCJhZGF0YSI6IiIsImNpcGhlciI6ImFlcyIsInNhbHQiOiJRcXM2QWxaNmdOYz0iLCJjdCI6IkdEWUZvT2lZSTlDclk1ZXdaelNvRkVSRllsTEY1VnNZR24rV2wzMk9xZkFnTFJHeTZPZnpkWlA4eDFoSlVzT2s0V0tPRW0yUVl1Tncxd2gySkRjOGpVMERyY21hdTc5ZVBMbHVCaHFyM0JqNmRtQmFQaHpsVVhLbngraEY0N2I5TG5SSkg2QVJRcXF6MWNUQnZMMmNDbENtQlFHekpJdmNsZFd4MEpnPSJ9"></script>
 </main>
 
+<div id="donateModalOpen" class="modal-window">
+  <a href="#modalClose" class="modal-window-close-background"></a>
+  <div>
+    <a href="#modalClose" style="float: right;">&times;</a>
+    <h3 style="margin: 1.5rem 0;text-align: center;">Donate</h3>
+    <hr>
+    <div id="donateModalBody" style="display: flex;flex-direction: column;">
+      <div id="litPayWall"></div>
+    </div>
+  </div>
+</div>
+
+<script src="https://ads4satoshis.com/paywall.js?adViews=3&cost=5" data-enc-server-info="eyJpdiI6Im0wWlNOLzhHU2dLbGRTaTU1Zlh2Zmc9PSIsInYiOjEsIml0ZXIiOjEwMDAwLCJrcyI6MTI4LCJ0cyI6NjQsIm1vZGUiOiJjY20iLCJhZGF0YSI6IiIsImNpcGhlciI6ImFlcyIsImtlbXRhZyI6InU2V3YwcGFaU01RNWo3RWF1N0NsWjY3bFk0c2I0a0NWaGNIZnNSTWhZdS92enZNd1BMN0FBTXVKbTV3Vjg1M1JIVHByMXptdEc5M1pPUzZadnF5Mk9RPT0iLCJjdCI6ImpLTmtLYlFCdlJFaDFPOVZ4Ui9ObG03OHRaRXhEVDlRM2hWOGFCUGwrZWtrMFN0K2V0eDV5cStLZFRlUU1lajVjNkJFc0s5MWdDSW55cUV4L1hHNGhkcXJSZG89In0=" data-enc-content="eyJpdiI6InhKaXNuK29QRFNGejBGMmRPNHk4QVE9PSIsInYiOjEsIml0ZXIiOjEwMDAwLCJrcyI6MTI4LCJ0cyI6NjQsIm1vZGUiOiJjY20iLCJhZGF0YSI6IiIsImNpcGhlciI6ImFlcyIsInNhbHQiOiJRcXM2QWxaNmdOYz0iLCJjdCI6IkdEWUZvT2lZSTlDclk1ZXdaelNvRkVSRllsTEY1VnNZR24rV2wzMk9xZkFnTFJHeTZPZnpkWlA4eDFoSlVzT2s0V0tPRW0yUVl1Tncxd2gySkRjOGpVMERyY21hdTc5ZVBMbHVCaHFyM0JqNmRtQmFQaHpsVVhLbngraEY0N2I5TG5SSkg2QVJRcXF6MWNUQnZMMmNDbENtQlFHekpJdmNsZFd4MEpnPSJ9"></script>
 </body>
 
 </html>
