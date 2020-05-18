@@ -4,13 +4,43 @@ body {
   margin: 0;
 }
 
-header {
-  padding: 0.8rem;
-  background-color: #f8f9fa;
-}
-
 main {
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1650px){
+  main {
+    margin: 0 0 0 270px;
+  }
+}
+
+@media screen and (max-width: 1380px){
+  #background {
+    top: -70px;
+    left: -80px;
+  }
+  main {
+    margin: 0 0 0 auto;
+  }
+}
+
+@media screen and (max-width: 1260px){
+  #background {
+    top: -270px;
+    left: -150px;
+  }
+  main {
+    margin: 0 0 0 auto;
+  }
+}
+
+@media screen and (max-width: 1075px){
+  #background {
+    display: none;
+  }
+  main {
+    margin: 0 auto;
+  }
 }
 
 section {
@@ -19,13 +49,15 @@ section {
 }
 
 p {
-  font-size: 1.2rem;
+  font-size: 1.6rem;
+  color: #353233;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3.2em;
   margin: 0.67em 0;
   font-weight: 500;
+  color: #282727;
 }
 
 h2, h3 {
@@ -39,12 +71,12 @@ hr {
 
 a {
   font-size: 1.25rem;
-  color: #007bff;
+  color: #282727;
   text-decoration: none;
 }
 
 a:hover{
-  color: #0063cc;
+  color: #512b58;
   text-decoration: underline;
 }
 
@@ -53,8 +85,8 @@ a.button {
   color: #fff;
   font-size: 1rem;
   padding: .5rem 1rem;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #6f8b5aff;
+  border-color: #2a7886;
   border-radius: 0.3rem;
   border: 1px solid transparent;
   transition: 0.15s;
@@ -64,7 +96,7 @@ a.button {
 }
 
 a.button:hover {
-  background-color: #0063cc;
+  background-color: #512b58;
 }
 
 a.button[disabled] {

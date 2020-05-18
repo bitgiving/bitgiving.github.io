@@ -12,23 +12,32 @@
 
 <body>
 
+<div style="position: absolute;z-index: -1;width: 100%; height: 100%;overflow: hidden;">
+  <div style="min-width: 1750px;">
+    <img id="background" style="position: absolute;" src="background-top-left.png">
+    <img src="background-top-right.png" style="vertical-align: top;float: right;">
+  </div>
+</div>
+
+<main style="max-width: 1100px;">
 <header>
-<nav style="display: flex; align-items: center; flex-wrap: wrap;">
-  <a href="index.html" style="color:#000;font-size: 1.2rem;margin: 0 0.8rem;">BitGiving</a>
+<nav style="display: flex; align-items: center; flex-wrap: wrap; justify-content: end;">
   <a href="about-us.html" style="margin: 0.3rem 0.8rem;font-size: 1rem;">About Us</a>
-  <a href="contact-us.html" style="margin: 0.3rem 0.8rem;font-size: 1rem;">Contact Us</a>
+  <a href="contact-us.html" style="margin: 0.3rem 0.5rem;font-size: 1rem;">Contact Us</a>
 </nav>
 </header>
 
-<main style="max-width: 1200px;">
-<h1 style="margin: 2rem 0;text-align: center;">BitGiving <img src="logo.png" width="100"></h1>
-<p style="margin: 1rem 1rem;">BitGiving's mission is to make it possible for anybody to donate. We believe a little can go a long way in helping organisations create global change.</p>
+<div style="display: flex;flex-direction: column;align-items: center;">
+  <h1 style="margin: 1rem 0rem 0rem 0rem;">Bit Giving</h1>
+  <img src="logo.png" style="margin: 0rem 0rem 3rem 0rem;">
+  <p style="margin: 1rem 1rem 3rem 1rem;max-width: 800px;">Bit Giving's mission is to make it possible for anybody to donate. We believe a little can go a long way in helping organisations create global change.</p>
+</div>
 
-<div style="display: flex;flex-wrap: wrap;">
+<div style="display: flex;flex-wrap: wrap;justify-content: center;">
 
   <div style="display: flex;flex-direction: column;margin: 1rem 1rem;">
-    <div style="display: flex;align-items: flex-end; justify-content: space-between;margin: 1rem 0;font-size: 1rem;">
-      <a href="https://www.doctorswithoutborders.org/">Doctors Without Borders</a>
+    <div style="display: flex;align-items: flex-end;justify-content: space-between;margin: 1rem 0;font-size: 1rem;">
+      <a href="https://www.doctorswithoutborders.org/" target="_blank">Doctors Without Borders</a>
       <a class="button" id="donateButton" style="margin: 0 0 0 2rem;font-size: 1rem;" href="#" onclick="document.getElementById('donateModal').style.display='block';">Donate</a>
     </div>
     <iframe width="500" height="400" src="https://www.youtube.com/embed/mXV8lTgETks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -36,7 +45,7 @@
 
   <div style="display: flex;flex-direction: column;margin: 1rem 1rem;">
     <div style="display: flex;align-items: flex-end; justify-content: space-between;margin: 1rem 0;font-size: 1rem;">
-      <a href="https://www.savethechildren.org/">Save the Children</a>
+      <a href="https://www.savethechildren.org/" target="_blank">Save the Children</a>
       <a class="button" id="donateButton" style="margin: 0 0 0 2rem;font-size: 1rem;" href="#" onclick="document.getElementById('donateModal').style.display='block';">Donate</a>
     </div>
     <iframe width="500" height="400" src="https://www.youtube.com/embed/jvV8ANCfITc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -44,7 +53,7 @@
 
   <div style="display: flex;flex-direction: column;margin: 1rem 1rem;">
     <div style="display: flex;align-items: flex-end; justify-content: space-between;margin: 1rem 0;font-size: 1rem;">
-      <a href="https://www.worldanimalprotection.org/">World Animal Protection</a>
+      <a href="https://www.worldanimalprotection.org/" target="_blank">World Animal Protection</a>
       <a class="button" id="donateButton" style="margin: 0 0 0 2rem;font-size: 1rem;" href="#" onclick="document.getElementById('donateModal').style.display='block';">Donate</a>
     </div>
     <iframe width="500" height="400" src="https://www.youtube.com/embed/eDvfrCOHCdo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -52,7 +61,7 @@
 
   <div style="display: flex;flex-direction: column;margin: 1rem 1rem;">
     <div style="display: flex;align-items: flex-end; justify-content: space-between;margin: 1rem 0;font-size: 1rem;">
-      <a href="https://hopeforjustice.org/">Hope for Justice</a>
+      <a href="https://hopeforjustice.org/" target="_blank">Hope for Justice</a>
       <a class="button" id="donateButton" style="margin: 0 0 0 2rem;font-size: 1rem;" href="#" onclick="document.getElementById('donateModal').style.display='block';">Donate</a>
     </div>
     <iframe width="500" height="400" src="https://www.youtube.com/embed/0_bAkVbjZro" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -60,6 +69,9 @@
 
 </div>
 </main>
+
+<footer>
+</footer>
 
 <div id="donateModal" class="modal-window" style="display: none;">
   <div>
